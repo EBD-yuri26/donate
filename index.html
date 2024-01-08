@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Beniyam</title>
+</head>
+<body>
+    <div class="nevbar" id="nevbar">
+        <div class="menu" id="menu">
+            <ul>
+                <li><a id="home" href="index.html">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#AboutUS">About me</a></li>
+            </ul>
+        </div>
+        <div class="menuicon">
+            <i id="menuicon" onclick="togglemenu()" class="fas fa-chevron-circle-down"> <span>MENU</span></i>
+        </div>
+    </div>
+
+    <div class="cover">
+
+        <div class="information">
+            <h1>-</h1>
+            <h3>Raising Our Hope</h3>
+            <h2>To help us work more efficiently in the </h2>
+            <h1> <span>FUTURE</span> </h1>
+            <h3> <span>YOUR COMPANY NAME GOES HERE</span> </h3>
+            <h1>-</h1>
+            <a href="#donate"><button>DONATE</button></a>
+        </div>
+
+    </div>
+    <script>
+        var menu = document.getElementById("menu");
+        menu.style.maxHeight = "0px";
+        function togglemenu() {
+            if (menu.style.maxHeight == "0px") {
+                menu.style.maxHeight = "390px";
+            }
+            else {
+                menu.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
